@@ -19,6 +19,7 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 
 
 </head>
@@ -82,9 +83,31 @@
                 <h1>Tecnologia</h1>
                 <p>TEC é uma revista Digital, que mostra as novidades no ramo das Tecnologias</p>
                 <p>Foi criada no ambito da cadeira de Projecto Global, do Curso de Engenharia Multimédia, do Instituto Superior de Tecnologias Avançadas de Lisboa(ISTEC).</p>
+				
+				
                 
             </div>
         </div>
+		<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+						</div>
+						<a class="fancybox-button col-md-2" rel="fancybox-button" href="img/Cart%C3%A3o%20MockUp.png" title="Cartão">
+							<img class="img-responsive" src="img/Cart%C3%A3o%20MockUppequeno.png" alt="" />
+						</a>
+						<a class="fancybox-button col-md-2" rel="fancybox-button" href="img/Carimbo%20MockUp.png" title="Carimbo">
+							<img class="img-responsive" src="img/Carimbo%20MockUppequeno.png" alt="" />
+						</a>
+						<a class="fancybox-button col-md-2" rel="fancybox-button" href="img/Pin%20Mock-Up.png" title="Pin">
+							<img class="img-responsive" src="img/Pin%20Mock-Uppequeno.png" alt="" />
+						</a>
+						<a class="fancybox-button col-md-2" rel="fancybox-button" href="img/Saco-MockUp.png" title="Saco">
+							<img class="img-responsive" src="img/Saco-MockUppequeno.png" alt="" />
+						</a>
+						<div class="col-md-2">
+						</div>
+					</div>
+				</div>
     </section>
 
     <!-- Download Section -->
@@ -135,10 +158,27 @@
 
     <!-- Plugin JavaScript util para o scroll-->
     <script src="js/jquery.easing.min.js"></script>
-
+	
+	<!--Visualizador de imagens -->
+	<script type="text/javascript" src="/fancybox/jquery.fancybox.pack.js"></script>
+	
 
     <!-- Custom Theme JavaScript -->
     <script src="js/tec.js"></script>
+	
+	<script>
+	$(document).ready(function() {
+		$(".fancybox-button").fancybox({
+			prevEffect		: 'none',
+			nextEffect		: 'none',
+			closeBtn		: true,
+			helpers		: {
+				title	: { type : 'inside' },
+				buttons	: {}
+			}
+		});
+	});
+	</script>
 
 </body>
 
