@@ -63,10 +63,10 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+   /*border-bottom: 1px solid rgba(255,255,255,.3);*/
     text-transform: uppercase;
     font-family:Tahoma, Geneva, sans-serif;
-    background-color: #92d5f5;
+    background-color: #ececec;
 }
 
 .navbar-custom .navbar-brand {
@@ -89,7 +89,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #005f8a;
+    color: rgb(147,213,247);
 }
 
 .navbar-custom .nav li a {
@@ -98,9 +98,10 @@ a:focus {
     transition: background .3s ease-in-out;
 }
 
+/*navbar quando tem o rato por cima*/
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
+    color: rgba(147,213,247,.8);
     background-color: transparent;
 }
 
@@ -135,8 +136,8 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #005f8a;
+        /*border-bottom: 1px solid rgba(255,255,255,.3);*/
+        background: #ececec;
     }
 }
 
@@ -366,4 +367,23 @@ body {
 
 .eu-img {
  margin-bottom: 30px;
+}
+
+.navbar-brand img {
+    max-width: 30px;
+    margin-top: -5px;
+}
+
+.btn-darkblue {
+    border: 1px solid #2bade4;
+    color: #2bade4;
+    background-color: transparent;
+}
+
+.btn-darkblue:hover,
+.btn-darkblue:focus {
+    border: 1px solid #92d5f5;
+    outline: 0;
+    color: #000;
+    background-color: #92d5f5;
 }
