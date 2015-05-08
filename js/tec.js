@@ -1,6 +1,6 @@
 
 
-// jQuery to collapse the navbar on scroll
+// Faz com que a barra inicial faça o efeito de encolher( no inicio esta mais gorda depois encolhe um bocado
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
@@ -9,7 +9,7 @@ $(window).scroll(function() {
     }
 });
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
+// faz a animação quando toca-se no botao da barra inicial e faz deslizar até a secção pretendida
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
@@ -19,7 +19,7 @@ $(function() {
         event.preventDefault();
     });
 });
-
+//quando o documento é carregado defenir as configurações da galeria
 $(document).ready(function() {
 		$(".fancybox-button").fancybox({
 			prevEffect		: 'none',
@@ -31,11 +31,3 @@ $(document).ready(function() {
 			}
 		});
 	});
-/*
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
-});
-*/
-

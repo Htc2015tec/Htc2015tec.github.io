@@ -17,12 +17,12 @@ html {
 
 h1{
     margin: 0 0 35px;
-    text-transform: uppercase;
+    text-transform: uppercase;/*mete em letras maiusculas*/
     font-family:Tahoma, Geneva, sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: 700;/*peso da font*/
+    letter-spacing: 1px;/*espaçamento entre letras*/
 	color:#005f89; 
-	text-shadow: 0px 0px 12px #fff;
+	text-shadow: 0px 0px 12px #fff;/*sombra das letras*/
 }
 h2,
 h3,
@@ -30,10 +30,10 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    text-transform: uppercase;
+    text-transform: uppercase;/*mete em letras maiusculas*/
     font-family:Tahoma, Geneva, sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: 700;/*peso da font*/
+    letter-spacing: 1px;/*espaçamento entre letras*/
 	color:#005f89;
 }
 
@@ -44,34 +44,33 @@ p {
 	color:#005f89
 }
 
-@media(min-width:768px) {
+@media(min-width:768px) {/*aplica quando a largura é mais ou igual que 768px*/
     p {
-        margin: 0 0 35px;
+        margin: 0 0 35px;/*margem cima, direita, baixo*/
         font-size: 20px;
         line-height: 1.6;
     }
 }
 
-a {
+a {/*links*/
     color: #005f89;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;/*muda de cor dos links no Safari*/
+    -moz-transition: all .2s ease-in-out;/*muda de cor dos links mozzila*/
+    transition: all .2s ease-in-out;/*muda de cor dos links*/
 }
 
-a:hover,
-a:focus {
+a:hover,/*é quando tem o rato por cima do link*/
+a:focus {/*é quando tem o rato por cima selecionado*/
     text-decoration: none;
     color: #2aade3;
 }
 
-.light {
+.light {/*aplica a class light no home*/
     font-weight: 400;
 }
 
 .navbar-custom {
     margin-bottom: 0;
-   /*border-bottom: 1px solid rgba(255,255,255,.3);*/
     text-transform: uppercase;
     font-family:Tahoma, Geneva, sans-serif;
     background-color: #ececec;
@@ -96,7 +95,7 @@ a:focus {
     outline: 0;
 }
 
-.navbar-custom a {
+.navbar-custom a {/*dentro da navbar a cor dos links*/
     color: #2aade3;
 }
 
@@ -113,7 +112,7 @@ a:focus {
     background-color: transparent;
 }
 
-.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:focus,/*é quando é o link selecionado*/
 .navbar-custom .nav li a:active {
     outline: 0;
     background-color: transparent;
@@ -123,15 +122,15 @@ a:focus {
     outline: 0;
 }
 
-.navbar-custom .nav li.active a {
+.navbar-custom .nav li.active a {/*é o background do link selecionado*/
     background-color: rgba(0,0,0,.3);
 }
 
-.navbar-custom .nav li.active a:hover {
+.navbar-custom .nav li.active a:hover {/*muda de cor quando se mete o rato por cima*/
     color: #fff;
 }
 
-@media(min-width:768px) {
+@media(min-width:768px) {/*é quando a largura for maior que 768px*/
     .navbar-custom {
         padding: 20px 0;
         border-bottom: 0;
@@ -142,15 +141,14 @@ a:focus {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
-    .navbar-custom.top-nav-collapse {
+    .navbar-custom.top-nav-collapse {/*cor da navbar*/
         padding: 0;
-        /*border-bottom: 1px solid rgba(255,255,255,.3);*/
         background: #ececec;
     }
 }
 
-.intro {
-    display: table;
+.intro {/*primeira secção*/
+    display: table;/*o elemento comporta-se como uma tabela*/
     width: 100%;
     height: auto;
     padding: 100px 0;
@@ -165,16 +163,8 @@ a:focus {
 }
 
 .intro .intro-body {
-    display: table-cell;
+    display: table-cell;/*é uma celula da tabela*/
     vertical-align: middle;
-}
-
-.intro .intro-body .brand-heading {
-    font-size: 40px;
-}
-
-.intro .intro-body .intro-text {
-    font-size: 20px;
 }
 
 @media(min-width:768px) {
@@ -182,23 +172,15 @@ a:focus {
         height: 100%;
         padding: 0;
     }
-
-    .intro .intro-body .brand-heading {
-        font-size: 100px;
-    }
-
-    .intro .intro-body .intro-text {
-        font-size: 26px;
-    }
 }
 
-.btn-circle {
+.btn-circle {/*css do botao redondo da intro*/
     width: 70px;
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
     border: 2px solid #2aade3;
-    border-radius: 100%!important;
+    border-radius: 100%!important;/*o importante tem prioridade perante os outros*/
     font-size: 40px;
     color: #2aade3;
     background: 0 0;
@@ -207,7 +189,7 @@ a:focus {
     transition: background .3s ease-in-out;
 }
 
-.btn-circle:hover,
+.btn-circle:hover,/*seta do circulo quando selecionado*/
 .btn-circle:focus {
     outline: 0;
     color: #005f89;
@@ -222,7 +204,7 @@ a:focus {
 }
 
 .btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
+    -webkit-animation-name: pulse;/*pulse aumenta e diminui é o efeito*/
     -moz-animation-name: pulse;
     -webkit-animation-duration: 1.5s;
     -moz-animation-duration: 1.5s;
@@ -232,7 +214,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {  /*é a escala que o pulso aplica */  
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -270,7 +252,7 @@ a:focus {
     padding-top: 100px;
 }
 
-.download-section {
+.download-section {/*secção do download*/
     width: 100%;
     padding: 50px 0;
     color: #fff;
@@ -278,7 +260,7 @@ a:focus {
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
+    background-size: cover;/*é para a imagem ocupar o espaço todo*/
     -o-background-size: cover;
 }
 
@@ -295,7 +277,7 @@ a:focus {
    
 }
 
-.btn {
+.btn {/*classe dos botoes*/
     border-radius: 0;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -305,7 +287,7 @@ a:focus {
     transition: all .3s ease-in-out;
 }
 
-.btn-default {
+.btn-default {/*estilo do botao default*/
     border: 1px solid #2aade3;
     color: #2aade3;
     background-color: transparent;
@@ -313,6 +295,20 @@ a:focus {
 
 .btn-default:hover,
 .btn-default:focus {
+    border: 1px solid #92d5f5;
+    outline: 0;
+    color: #000;
+    background-color: #2aade3;
+}
+
+.btn-darkblue {
+    border: 1px solid #2bade4;
+    color: #2bade4;
+    background-color: transparent;
+}
+
+.btn-darkblue:hover,
+.btn-darkblue:focus {
     border: 1px solid #92d5f5;
     outline: 0;
     color: #000;
@@ -331,7 +327,7 @@ ul.banner-social-buttons {
 
 @media(max-width:767px) {
     ul.banner-social-buttons li {
-        display: block;
+        display: block;/*botoes um a baixo do outro*/
         margin-bottom: 20px;
         padding: 0;
     }
@@ -381,21 +377,8 @@ body {
  margin-bottom: 40px;
 }
 
-.navbar-brand img {
+.navbar-brand img {/*imagem do tec simbolo ao lado do home*/
     max-width: 30px;
     margin-top: -5px;
 }
 
-.btn-darkblue {
-    border: 1px solid #2bade4;
-    color: #2bade4;
-    background-color: transparent;
-}
-
-.btn-darkblue:hover,
-.btn-darkblue:focus {
-    border: 1px solid #92d5f5;
-    outline: 0;
-    color: #000;
-    background-color: #2aade3;
-}
