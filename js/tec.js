@@ -30,4 +30,7 @@ $(document).ready(function() {
 				buttons	: {}
 			}
 		});
+		$("#minha-revista").click(function(){
+			$(".minha-revista").slideToggle();
+		});
 	});

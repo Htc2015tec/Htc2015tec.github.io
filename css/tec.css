@@ -386,3 +386,8 @@ body {
     margin: 0 auto;
 }
 
+.minha-revista {
+	margin-top: 50px;
+	display: none;
+}
+
