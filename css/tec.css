@@ -382,3 +382,7 @@ body {
     margin-top: -5px;
 }
 
+.fancybox-button img.img-responsive { /*imagens dos mockups centradas em mobile*/
+    margin: 0 auto;
+}
+
