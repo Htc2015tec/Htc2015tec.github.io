@@ -19,7 +19,7 @@ $(function() {
         event.preventDefault();
     });
 });
-//quando o documento é carregado defenir as configurações da galeria
+//quando o documento é carregado definir as configurações da galeria
 $(document).ready(function() {
 		$(".fancybox-button").fancybox({
 			prevEffect		: 'none',
