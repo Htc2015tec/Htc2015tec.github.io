@@ -10,6 +10,8 @@ $(window).scroll(function() {
 });
 
 // faz a animação quando toca-se no botao da barra inicial e faz deslizar até a secção pretendida
+
+
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
@@ -19,7 +21,10 @@ $(function() {
         event.preventDefault();
     });
 });
+
 //quando o documento é carregado definir as configurações da galeria
+
+
 $(document).ready(function() {
 		$(".fancybox-button").fancybox({
 			prevEffect		: 'none',
@@ -30,7 +35,7 @@ $(document).ready(function() {
 				buttons	: {}
 			}
 		});
-		$("#minha-revista").click(function(){
-			$(".minha-revista").slideToggle();
+		$("#minha-galeria").click(function(){
+			$(".minha-galeria").slideToggle();
 		});
 	});
