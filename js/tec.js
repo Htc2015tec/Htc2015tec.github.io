@@ -35,7 +35,7 @@ $(document).ready(function() {
 				buttons	: {}
 			}
 		});
-		$("#minha-galeria").click(function(){
-			$(".minha-galeria").slideToggle();
+		$("#minha-revista").click(function(){
+			$(".minha-revista").slideToggle();
 		});
 	});
